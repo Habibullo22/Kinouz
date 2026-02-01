@@ -300,8 +300,8 @@ async def help_cmd(message: types.Message, bot: Bot):
         return
     await message.answer(
         "📌 Kino olish: 🎬 Kino olish tugmasini bosing, keyin kod yuboring.\n"
-        "📌 /id — chat id chiqaradi.\n"
-        "📌 Admin: kino qo‘shish / o‘chirish / broadcast."
+        "📌 bu bot kino lar va zavq uchun.\n"
+        "📌 Admin @fon_abidjan reklama uchun."
     )
 
 @dp.message(F.text == "🎬 Kino olish")
@@ -309,7 +309,7 @@ async def kino_olish(message: types.Message, bot: Bot):
     if not await require_sub_message(bot, message):
         return
     USER_GET_FLOW.add(message.from_user.id)
-    await message.answer("🎬 Kino kodini yuboring (masalan: 102)")
+    await message.answer("🎬 Kino kodini yuboring")
 
 # --- Admin tugmalar
 @dp.message(F.text == "➕ Kino qo‘shish")
