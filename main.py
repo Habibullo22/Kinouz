@@ -20,7 +20,7 @@ TOKEN = "8478058553:AAGR0eMotTJy5_zM-65bHGGsm2ImcOKKfeE"
 ADMINS = {5815294733}
 
 # Majburiy obuna kanallari
-REQUIRED_CHATS = ["@bypass_bypasss", "@kino_olami_kinolar"]
+REQUIRED_CHATS = ["@bypass_bypasss", "@kino_olami_kinolar", "@telefon_olami_12_viloyat"]
 
 # Kino topilmasa yo'naltirish
 MOVIES_CHANNEL = "@kino_olami_kinolar"
@@ -299,7 +299,7 @@ async def help_cmd(message: types.Message, bot: Bot):
     if not await require_sub_message(bot, message):
         return
     await message.answer(
-        "📌 Kino olish: 🎬 Kino olish tugmasini bosing, keyin kod yuboring.\n"
+        "📌 Kino olish🎬 tugmasini bosing, keyin kod yuboring.\n"
         "📌 bu bot kino lar va zavq uchun.\n"
         "📌 Admin @fon_abidjan reklama uchun."
     )
